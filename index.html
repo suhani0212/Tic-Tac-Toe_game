@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Tic Tac Toe</title>
+    <!-- Bootswatch-->
+    <link rel="stylesheet" href="https://bootswatch.com/5/yeti/bootstrap.min.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">   
+    <!-- Fontawesome CSS-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container-fuild mx-auto">
+        <h1 class="text-center">Tic Tac Toe</h1>
+        <div class="main-box">
+            <ul class="nav nav-pills d-flex justify-content-between">
+                <li class="nav-item">
+                  <a class="nav-link active">Player 1 <span class="badge bg-secondary" id="player1Score">0</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Player 2 <span class="badge bg-secondary" id="player2Score">0</span></a>
+                </li>
+            </ul>
+            <div class="row" id="board"></div>
+                <div class="controls btn-group btn-group-justified d-flex justify-content-center">
+                <a id="clear" class="btn btn-secondary">Clear</a>
+                <a id="reset" class="btn btn-warning">Reset</a>
+            </div>
+        </div>
+
+        <div id="alert-box" class="alert alert-success alert-dismissible fade show" role="alert">
+            Player X <strong>Won!</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+    </div>
+
+    <footer class="text-center">
+        Designed and <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <b>Suhani</b>
+    </footer>
+
+
+    
+</body>
+</html>
